@@ -20,7 +20,8 @@ export default function Info() {
     const { isToggled } = useContext(ToggleContext);
     const styles = {
         color: 'white',
-        backgroundColor: '#0c0c3f'
+        // backgroundColor: '#0c0c3f'
+        backgroundColor: 'black'
     }
 
     return (

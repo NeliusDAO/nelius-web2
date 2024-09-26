@@ -9,7 +9,8 @@ export default function Subscribe() {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     const dark = {
-        backgroundColor: '#0c0c3f',
+        // backgroundColor: '#0c0c3f',
+        backgroundColor: 'black',
         color: 'white',
     }
 

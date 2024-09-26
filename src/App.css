@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 
 * {
@@ -30,6 +31,18 @@
 
 /* NAV */
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo p {
+  font-family: "Righteous", sans-serif;
+  font-size: 32.35px;
+  font-weight: 400;
+}
+
 .social-items {
   display: flex;
   gap: 20px;
@@ -49,7 +62,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 15px 20px;
+  padding: 5px 20px;
   margin-bottom: 20px;
   background-color: #fff;
   position: fixed;
@@ -294,6 +307,10 @@ input:checked+.slider:before {
   text-align: center;
 }
 
+.headParagraph {
+  font-size: 28px;
+}
+
 .sectionOneHeadText p {
   font-weight: 500;
   font-size: 64px;
@@ -373,15 +390,16 @@ input:checked+.slider:before {
 /* ABOUT */
 
 @media screen and (max-width: 700px) {
-  /* #about {
-    margin: 0px 30px 0px 30px;
-  } */
   #about {
     padding: 0px 30px 0px 30px;
   }
-  
+
+  #about #p {
+    font-size: 16px;
+  }
+
   .about .aboutHead {
-    font-size: medium;
+    font-size: x-large;
     font-weight: 500;
     text-align: center;
   }
@@ -401,23 +419,29 @@ input:checked+.slider:before {
     background-color: '#0c0c3f';
     color: 'white';
   }
-  
+
   .about .aboutHead {
-    font-size: large;
     font-weight: 500;
     text-align: center;
   }
 }
 
 .about {
-  margin: 0px 100px 0px 100px;
+  padding: 0px 100px 0px 100px;
 }
 
 .aboutHead {
-  margin: 20px 0 20px 0;
+  margin: 0px;
+  padding-top: 30px;
   font-size: 64px;
   font-weight: 500;
   text-align: center;
+}
+
+#about p {
+  margin: 0px;
+  padding-bottom: 20px;
+  font-size: 28px;
 }
 
 /* BLUEPRINT */
@@ -448,7 +472,7 @@ input:checked+.slider:before {
     margin: 0;
   }
 
-  .stageCard .cardText {
+  .stageCard #cardText {
     width: 100%;
     font-size: xx-small;
   }
@@ -472,7 +496,7 @@ input:checked+.slider:before {
     margin: 0;
   }
 
-  .stageCard .cardText {
+  .stageCard #cardText {
     width: 100%;
     font-size: small;
   }
@@ -488,6 +512,7 @@ input:checked+.slider:before {
 
 .stageCard .cardText {
   z-index: 1;
+  font-size: 28px;
   width: 100%;
   position: absolute;
   display: flex;
@@ -528,6 +553,7 @@ input:checked+.slider:before {
 /* INFO */
 
 @media screen and (max-width : 799px) {
+
   .infoOne,
   .info .infoTwo .infoFlexOne {
     display: none;
@@ -666,12 +692,14 @@ input:checked+.slider:before {
 /* SUBSCRIBE */
 
 .subscribeHead {
-  font-size: 42px;
+  font-size: 64px;
   font-weight: 500;
+  margin: 0;
+  padding-top: 50px;
 }
 
 .subscribeText {
-  font-size: large;
+  font-size: 28px;
   font-weight: 500;
 }
 
@@ -679,7 +707,7 @@ input:checked+.slider:before {
   display: block;
   align-items: center;
   text-align: center;
-  margin: 0 auto;
+  margin: 0px;
 }
 
 .form {
@@ -688,11 +716,19 @@ input:checked+.slider:before {
 
 @media screen and (max-width : 700px) {
 
+  .subscribeHead {
+    font-size: x-large;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 50px;
+  }
+
   .subscribeText {
     font-size: small;
     font-weight: 500;
+    padding: 0px 30px;
     /* color: linear-gradient(180deg, rgb(10, 30, 80), rgb(20, 10, 130), rgb(10, 30, 80)); */
-    }
+  }
 
   .inputContainer .emailInput {
     font-size: 16px;
@@ -794,7 +830,7 @@ input:checked+.slider:before {
 .faq-answer {
   padding: 10px 10px 0 0;
   color: #555;
-  margin-left: 50px;
+  margin-left: 60px;
 }
 
 @media screen and (max-width : 700px) {
@@ -820,9 +856,13 @@ input:checked+.slider:before {
     display: none;
   }
 
-  .faq-icon,
+  .faq-icon {
+    font-size: 8px;
+  }
+
   .faq-answer {
     font-size: 8px;
+    margin-left: 50px;
   }
 
   .faq-question {
@@ -839,9 +879,13 @@ input:checked+.slider:before {
 @media screen and (min-width : 701px) and (max-width : 850px) {
 
   .faq-icon,
-  .faq-question,
+  .faq-question {
+    font-size: 14px;
+  }
+
   .faq-answer {
     font-size: 14px;
+    padding-left: 40px;
   }
 
   .faq-icon,
@@ -869,9 +913,13 @@ input:checked+.slider:before {
 @media screen and (min-width : 851px) and (max-width : 1030px) {
 
   .faq-icon,
-  .faq-question,
+  .faq-question {
+    font-size: 18px;
+  }
+
   .faq-answer {
     font-size: 18px;
+    margin-left: 50px;
   }
 
   .faq-icon,
