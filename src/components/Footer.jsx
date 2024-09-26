@@ -5,7 +5,8 @@ import { ToggleContext } from './ToggleContext'
 export default function Footer() {
     const { isToggled } = useContext(ToggleContext);
     const dark = {
-        backgroundColor: '#0c0c3f',
+        // backgroundColor: '#0c0c3f',
+        backgroundColor: 'black',
         color: 'white',
     }
 
