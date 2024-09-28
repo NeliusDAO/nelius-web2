@@ -3,8 +3,16 @@ import Two from "../assets/img/logo/two.svg"
 import Three from "../assets/img/logo/three.svg"
 import Four from "../assets/img/logo/four.svg"
 import Five from "../assets/img/logo/five.svg"
+import React, { useContext } from 'react';
+import { ToggleContext } from './ToggleContext';
 
 export default function Blueprint() {
+    const { isToggled } = useContext(ToggleContext);
+    const colorSwitch = {
+        // backgroundColor: '#0c0c3f',
+        backgroundColor: 'black',
+        color: 'white',
+    };
 
     const blueprints = {
         zero: "",
@@ -16,7 +24,7 @@ export default function Blueprint() {
     }
 
     return (
-        <div className="blueprint" id="blueprint">
+        <div className="blueprint" id="blueprint" style={!isToggled ? colorSwitch : {}}>
             <p className="blueprintText">
                 The <span className="textOne">Nelius</span> Blueprint
             </p>
@@ -25,11 +33,11 @@ export default function Blueprint() {
                     <p>{blueprints.zero[1]}</p>
                 </div>
                 <div className="stageCard" style={{}}>
-                    <p style={{}} className="cardText">{blueprints.one}</p>
+                    <p style={{}} className="cardText" id="cardText">{blueprints.one}</p>
                     <img src={One} alt="One" width={100} height={200} className="blueprintImage" />
                 </div>
                 <div className="stageCard" style={{}}>
-                    <p style={{}} className="cardText">{blueprints.two}</p>
+                    <p style={{}} className="cardText" id="cardText">{blueprints.two}</p>
                     <img src={Two} alt="Two" width={100} height={200} className="blueprintImage" />
                 </div>
                 <div className="stageCards">
@@ -39,11 +47,11 @@ export default function Blueprint() {
                     <p>{blueprints.zero[1]}</p>
                 </div>
                 <div className="stageCard" style={{}}>
-                    <p style={{}} className="cardText">{blueprints.three}</p>
+                    <p style={{}} className="cardText" id="cardText">{blueprints.three}</p>
                     <img src={Three} alt="Three" width={100} height={200} className="blueprintImage" />
                 </div>
                 <div className="stageCard" style={{}}>
-                    <p style={{}} className="cardText">{blueprints.four}</p>
+                    <p style={{}} className="cardText" id="cardText">{blueprints.four}</p>
                     <img src={Four} alt="Four" width={100} height={200} className="blueprintImage" />
                 </div>
                 <div className="stageCards">
@@ -53,7 +61,7 @@ export default function Blueprint() {
                     <p>{blueprints.zero[1]}</p>
                 </div>
                 <div className="stageCard" style={{}}>
-                    <p style={{}} className="cardText">{blueprints.five}</p>
+                    <p style={{}} className="cardText" id="cardText">{blueprints.five}</p>
                     <img src={Five} alt="Five" width={100} height={200} className="blueprintImage" />
                 </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { ToggleContext } from './ToggleContext';
-import Logo from '../assets/img/logo/logo.svg';
+// import Logo from '../assets/img/logo/logo.svg';
+import Logo from '../assets/img/logo/logo_nelius.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegram, faInstagram, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
@@ -40,13 +41,15 @@ export default function Nav2(props) {
     }
 
     const colorSwitch = {
-        backgroundColor: '#0c0c3f',
+        // backgroundColor: 'rgb(19, 55, 128)',
+        backgroundColor: 'black',
         color: 'white',
     };
     return (
         <nav style={!isToggled ? colorSwitch : {}}>
             <div className="logo">
                 <img src={Logo} alt="logo" className="logo-img" />
+                <p>Nelius</p>
             </div>
             <div className={`nav-list ${isOpen ? 'open' : ''}`}>
                 <ul className="lists">
@@ -95,7 +98,7 @@ export default function Nav2(props) {
                 <ul className="social-items">
                     <li>
                         <Link
-                            to="(link unavailable)"
+                            to="https://t.me/+AYM-0yp8od4yMGI0"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -123,7 +126,7 @@ export default function Nav2(props) {
                     </li>
                     <li>
                         <Link
-                            to="(link unavailable)"
+                            to="https://x.com/neliustoken"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -137,7 +140,7 @@ export default function Nav2(props) {
                     </li>
                     <li>
                         <Link
-                            to="(link unavailable)"
+                            to="https://www.linkedin.com/company/nelius/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
