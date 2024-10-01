@@ -14,6 +14,12 @@ export default function Subscribe() {
         color: 'white',
     }
 
+    const mail = {
+        backgroundColor: 'black',
+        color: 'white',
+        border: 'white solid 1px'
+    }
+
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
@@ -40,7 +46,8 @@ export default function Subscribe() {
             )}
             <form action="" method="" className="form">
                 <div className="inputContainer">
-                    <input type="email" className="emailInput" id="emailInput" placeholder="Enter email" value={email} onChange={(e) => setEmail(e.target.value)} onClick={handleSubmit} />
+                    <input type="email" className="emailInput" id="emailInput" placeholder="Enter email"  style={!isToggled ? mail : {} }
+                    value={email} onChange={(e) => setEmail(e.target.value)} onClick={handleSubmit} />
                     <Submit button="Subscribe" />
                 </div>
             </form>

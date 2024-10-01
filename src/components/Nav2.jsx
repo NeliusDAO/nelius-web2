@@ -26,18 +26,18 @@ export default function Nav2(props) {
     };
 
     const inactiveStyles = {
-        color: !isToggled ? 'white' : 'black'
+        color: 'black'
     }
 
     const inactiveStyles1 = {
-        color: !isToggled ? 'black' : 'white'
+        color: 'white'
     }
 
     const styles1 = {
         borderRadius: '20px',
         border: 'none',
         color: 'white',
-        background: 'linear-gradient(180deg, rgb(10, 30, 80), rgb(20, 10, 130), rgb(10, 30, 80))',
+        background: 'linear-gradient(180deg, rgb(10, 30, 80), rgb(20, 10, 130), rgb(10, 30, 80))'
     }
 
     const colorSwitch = {
@@ -53,7 +53,7 @@ export default function Nav2(props) {
             </div>
             <div className={`nav-list ${isOpen ? 'open' : ''}`}>
                 <ul className="lists">
-                    <li className="list-items">
+                    <li className="list-items" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
                         <button
                             className="buttons"
                             style={
@@ -71,7 +71,7 @@ export default function Nav2(props) {
                         </button>
 
                     </li>
-                    <li className="list-items">
+                    <li className="list-items" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
                         <button
                             className="buttons"
                             style={
@@ -88,7 +88,7 @@ export default function Nav2(props) {
                             {props.about}
                         </button>
                     </li>
-                    <li className="toggle-list">
+                    <li className="toggle-list" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
                         <ToggleSwitch setIsToggled={setIsToggled} />
                     </li>
                 </ul>
@@ -158,10 +158,10 @@ export default function Nav2(props) {
                 className={`hamburger ${isOpen ? 'open' : ''}`}
                 onClick={toggleHamburger}
             >
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
-                <div className="line"></div>
+                <div className="line" style={{backgroundColor : !isToggled ? 'white' : 'black'}}></div>
+                <div className="line" style={{backgroundColor : !isToggled ? 'white' : 'black'}}></div>
+                <div className="line" style={{backgroundColor : !isToggled ? 'white' : 'black'}}></div>
+                <div className="line" style={{backgroundColor : !isToggled ? 'white' : 'black'}}></div>
             </div>
         </nav>
     );
