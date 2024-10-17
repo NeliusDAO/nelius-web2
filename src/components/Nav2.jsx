@@ -3,7 +3,7 @@ import { ToggleContext } from './ToggleContext';
 // import Logo from '../assets/img/logo/logo.svg';
 import Logo from '../assets/img/logo/logo_nelius.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTelegram, faInstagram, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faTelegram, faInstagram, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 export default function Nav2(props) {
@@ -131,7 +131,7 @@ export default function Nav2(props) {
                             rel="noopener noreferrer"
                         >
                             <FontAwesomeIcon
-                                icon={faTwitter}
+                                icon={faXTwitter}
                                 size="lg"
                                 color={!isToggled ? 'white' : 'black'}
                                 className="social-icon"
