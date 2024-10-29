@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { ToggleContext } from './ToggleContext';
-// import Logo from '../assets/img/logo/logo.svg';
-import Logo from '../assets/img/logo/logo_nelius.png';
+// import Logo from '../assets/img/logo/logo_nelius.png';
+import Logo from '../assets/img/logo/nelius_logo_nav.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegram, faInstagram, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
@@ -48,8 +48,7 @@ export default function Nav2(props) {
     return (
         <nav style={!isToggled ? colorSwitch : {}}>
             <div className="logo">
-                <img src={Logo} alt="logo" className="logo-img" />
-                <p>Nelius</p>
+                <img src={Logo} alt="logo" className="logo-img" id='logo-img' />
             </div>
             <div className={`nav-list ${isOpen ? 'open' : ''}`}>
                 <ul className="lists">
@@ -71,7 +70,7 @@ export default function Nav2(props) {
                         </button>
 
                     </li>
-                    <li className="list-items" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
+                    {/* <li className="list-items" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
                         <button
                             className="buttons"
                             style={
@@ -87,7 +86,7 @@ export default function Nav2(props) {
                         >
                             {props.about}
                         </button>
-                    </li>
+                    </li> */}
                     <li className="toggle-list" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
                         <ToggleSwitch setIsToggled={setIsToggled} />
                     </li>
