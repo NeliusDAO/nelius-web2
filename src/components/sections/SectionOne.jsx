@@ -1,4 +1,4 @@
-import Button from "../../assets/Button";
+// import Button from "../../assets/Button";
 import { useContext } from "react";
 import { ToggleContext } from '../ToggleContext';
 // import CarouselPage from "../Carousel";
@@ -34,9 +34,9 @@ export default function SectionOne() {
                     <div className="sectionOneParagraph">
                         <p className="headParagraph">With the introduction of Nelius, a donation token, your events can be funded when supported events are publicised.</p>
                     </div>
-                    <div className="sectionOneButton">
+                    {/* <div className="sectionOneButton">
                         <Button button='Get Started' />
-                    </div>
+                    </div> */}
                 </div>
             </div>
             {/* <CarouselPage /> */}
