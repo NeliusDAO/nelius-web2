@@ -24,7 +24,7 @@
 @media screen and (max-width : 700px) {
   .buttonComponent {
     width: 90px;
-    height: 40px;
+    height: 35px;
     font-size: 10px;
   }
 }
@@ -34,12 +34,11 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .logo p {
   font-family: "Righteous", sans-serif;
-  font-size: 32.35px;
+  font-size: 40px;
   font-weight: 400;
 }
 
@@ -50,9 +49,12 @@
 }
 
 @media screen and (max-width : 700px) {
-  .logo-img {
-    width: 20px;
-    height: 20px;
+  #logo-img {
+    height: 50px;
+  }
+
+  .logo p {
+    font-size: 30px;
   }
 }
 
@@ -72,8 +74,7 @@ nav {
 }
 
 .logo-img {
-  height: 40px;
-  width: 40px;
+  height: 80px;
 }
 
 .nav-list {
@@ -291,10 +292,6 @@ input:checked+.slider:before {
   filter: blur(150px);
 }
 
-/* .sectionOne {
-  margin: auto;
-  margin-top: 120px;
-} */
 .sectionOne {
   padding: auto;
   padding-top: 120px;
@@ -344,47 +341,32 @@ input:checked+.slider:before {
   line-height: 2rem;
 }
 
-/* CarouselPage.css */
-
 .carouselFrame {
   margin-top: 50px;
 }
-
-/* CarouselPage.css */
 
 .carousel .slide img {
   width: 100%;
   height: 500px;
   object-fit: contain;
-  /* Ensures the image covers the entire height and width without distortion */
 }
 
 .carousel .thumbs-wrapper {
   display: none;
-  /* Hides the thumbnail previews */
 }
 
 .carousel .control-dots .dot {
   background-color: #000;
-  /* Customize dot color */
 }
 
 .carousel .control-prev.control-arrow,
 .carousel .control-next.control-arrow {
   opacity: 0.7;
-  /* Customize arrow opacity */
 }
 
 .carousel .legend {
   display: none;
 }
-
-/* .carousel .legend {
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 10px;
-  font-size: 1rem;
-} */
 
 /* ABOUT */
 
@@ -721,6 +703,7 @@ input:checked+.slider:before {
   .inputContainer .emailInput {
     font-size: 10px;
     width: 200px;
+    height: 30px;
     padding-left: 15px;
   }
 
