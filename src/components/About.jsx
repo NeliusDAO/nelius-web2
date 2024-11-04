@@ -13,7 +13,7 @@ export default function About() {
         return (
             <main style={!isToggled ? dark : {}} className="about" id="about">
                 <h3 className="aboutHead">About <span className="textOne">Nelius</span></h3>
-                <p id='p'>Hosting events often requires financing and publicity. Nelius is a dApp aiming to facilitate funding and efficient publicity of programs and events.</p>
+                <p id='p'>Hosting events often requires financing and publicity. Nelius is a DAO aiming to facilitate funding and efficient publicity of programs and events.</p>
             </main>
         )
     };

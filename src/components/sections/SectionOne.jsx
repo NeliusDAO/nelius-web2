@@ -28,11 +28,11 @@ export default function SectionOne() {
                 <div className="circleBackground"></div>
                 <div className="sectionOneFrame">
                     <div className="sectionOneHeadText">
-                        <p className="headText">Get <span style={!isToggled ? text : {}} className="textOne">Funded</span> ,Get <span className="textOne">Public</span></p>
+                        <p className="headText">Get <span style={!isToggled ? text : {}} className="textOne">Publicity</span>, Get <span className="textOne">Funded</span></p>
                         <p className="headText">With Nelius</p>
                     </div>
                     <div className="sectionOneParagraph">
-                        <p className="headParagraph">With the introduction of Nelius, a donation token, your events can be funded when supported events are publicised.</p>
+                        <p className="headParagraph">With Nelius, your events can get effective publicity and funding.</p>
                     </div>
                     {/* <div className="sectionOneButton">
                         <Button button='Get Started' />
