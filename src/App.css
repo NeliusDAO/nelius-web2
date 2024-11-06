@@ -36,12 +36,6 @@
   align-items: center;
 }
 
-.logo p {
-  font-family: "Righteous", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-}
-
 .social-items {
   display: flex;
   gap: 20px;
@@ -52,10 +46,6 @@
   #logo-img {
     height: 50px;
   }
-
-  .logo p {
-    font-size: 30px;
-  }
 }
 
 /* src/Nav.css */
@@ -64,7 +54,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 5px 20px;
+  padding: 15px 20px;
   margin-bottom: 20px;
   background-color: #fff;
   position: fixed;
