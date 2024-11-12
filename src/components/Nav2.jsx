@@ -8,12 +8,12 @@ import { Link } from 'react-router-dom';
 
 export default function Nav2(props) {
     const { isToggled, setIsToggled } = useContext(ToggleContext);
-    const [activeButton, setActiveButton] = useState(props.home);
+    // const [activeButton, setActiveButton] = useState(props.home);
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleClick = (event) => {
-        setActiveButton(event.target.textContent);
-    };
+    // const handleClick = (event) => {
+    //     setActiveButton(event.target.textContent);
+    // };
 
     const toggleHamburger = () => {
         setIsOpen(!isOpen);
@@ -25,13 +25,13 @@ export default function Nav2(props) {
         background: 'linear-gradient(180deg, rgb(233, 241, 243), rgb(233, 241, 243), rgb(233, 241, 243), rgb(94, 110, 234))',
     };
 
-    const inactiveStyles = {
-        color: 'black'
-    }
+    // const inactiveStyles = {
+    //     color: 'black'
+    // }
 
-    const inactiveStyles1 = {
-        color: 'white'
-    }
+    // const inactiveStyles1 = {
+    //     color: 'white'
+    // }
 
     const styles1 = {
         borderRadius: '20px',
@@ -55,6 +55,12 @@ export default function Nav2(props) {
                     <li className="list-items" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
                         <button
                             className="buttons"
+                            style={isToggled ? styles : styles1}
+                        >
+                            {props.home}
+                        </button>
+                        {/* <button
+                            className="buttons"
                             style={
                                 !isToggled
                                     ? activeButton === props.home
@@ -67,7 +73,7 @@ export default function Nav2(props) {
                             onClick={handleClick}
                         >
                             {props.home}
-                        </button>
+                        </button> */}
 
                     </li>
                     {/* <li className="list-items" style={{backgroundColor : isToggled ? 'white' : 'black'}}>

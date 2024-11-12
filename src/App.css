@@ -283,8 +283,7 @@ input:checked+.slider:before {
 }
 
 .sectionOne {
-  padding: auto;
-  padding-top: 120px;
+  padding-top: 180px;
 }
 
 .sectionOneHeadText,

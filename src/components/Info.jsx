@@ -86,7 +86,7 @@ const InfoImg = () => {
     return (
         <div className="imageGrids">
             <div id="info_back">
-                <p id="infoText" className="infoText">Gettin<span className="textOne">g Your Events</span> Noticed</p>
+                <p id="infoText" className="infoText">Crite<span className="textOne">ria For Events Nomin</span>ation</p>
                 {isMobile ? (
                     <p id="info_backP">All yo<span className="textTwo">u need</span> to<br></br>nomi<span className="textTwo">nate you</span>r event</p>
                 ) : (
@@ -98,7 +98,7 @@ const InfoImg = () => {
                 <img src={!isToggled ? PlantDark : Plant} alt="Large images" style={styles.image} />
             </div>
             <div id="info_back">
-                <p id="infoText" className="infoText">Crite<span className="textOne">ria For Events Nomin</span>ation</p>
+                <p id="infoText" className="infoText">Gettin<span className="textOne">g Your Events</span> Noticed</p>
                 {isMobile ? (
                     <p id="info_backP">Sim<span className="textTwo">ple actions for e</span>vent<br></br><span className="textTwo">owners / facilit</span>ators</p>) : (
                     <p id="info_backP">Sim<span className="textTwo">ple actions for e</span>vent<br></br><span className="textTwo">owners / facilit</span>ators</p>
