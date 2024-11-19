@@ -57,7 +57,7 @@ export default function Nav2(props) {
                             className="buttons"
                             style={isToggled ? styles : styles1}
                         >
-                            {props.home}
+                            {props.about}
                         </button>
                         {/* <button
                             className="buttons"
@@ -96,6 +96,9 @@ export default function Nav2(props) {
                     <li className="toggle-list" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
                         <ToggleSwitch setIsToggled={setIsToggled} />
                     </li>
+                    <li>
+                        <Link to="/signup">Sign Up</Link>
+                    </li>
                 </ul>
 
             </div>
@@ -109,7 +112,7 @@ export default function Nav2(props) {
                         >
                             <FontAwesomeIcon
                                 icon={faTelegram}
-                                size="lg"
+                                size="xx-lg"
                                 color={!isToggled ? 'white' : 'black'}
                                 className="social-icon"
                             />
