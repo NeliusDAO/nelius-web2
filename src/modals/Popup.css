@@ -1,0 +1,169 @@
+.modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.circleBackground {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 250px;
+    background-color: rgba(2, 175, 243, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    filter: blur(150px);
+}
+
+.close {
+    font-weight: 900;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+}
+
+.inputFrame {
+    display: grid;
+    justify-content: center;
+}
+
+.passError {
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.passError.green {
+    color: green;
+}
+
+.passError.red {
+    color: red;
+}
+
+
+.p {
+    background: linear-gradient(-45deg, rgb(5, 20, 60), rgb(5, 20, 60), rgb(98, 146, 212), rgb(5, 20, 60), rgb(5, 20, 60));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.p p {
+    font-size: 64px;
+}
+
+.btnFrame {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.signIn {
+    width: 150px;
+    height: 45px;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, rgb(5, 20, 60), rgb(98, 146, 212), rgb(98, 146, 212), rgb(5, 20, 60));
+}
+
+.signInInput {
+    width: 500px;
+    height: 55px;
+    border: none;
+    border-radius: 25px;
+    padding-left: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    margin: 5px 0px 10px 0px;
+}
+
+@media screen and (max-width : 700px) {
+    #login {
+        padding: 0px;
+        display: grid;
+        place-content: center;
+        height: 95vh;
+    }
+
+    .p p {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .signInInput {
+        width: 300px;
+        height: 45px;
+        border: none;
+        border-radius: 25px;
+        padding-left: 20px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        outline: none;
+        margin: 5px 0px 10px 0px;
+    }
+
+    .btnFrame {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+    .signIn {
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        border: none;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1160px) {
+    .p p {
+        font-size: 45px;
+        font-weight: 500;
+    }
+}
+
+/* LOGIN */
+
+.login {
+    padding: 0px 100px;
+    display: grid;
+    place-content: center;
+    height: 85vh;
+}

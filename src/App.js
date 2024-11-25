@@ -7,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import TokenHolders from './pages/TokenHolders';
 import Signup from './modals/Signup';
 import { useLocation } from 'react-router-dom';
+import Login from './modals/Login';
 
 function App() {
 
@@ -29,10 +30,11 @@ function App() {
 const Pages = () => {
   return (
     <>
-      <Nav2 home='Token Holders' about='Event Owners' />
+      <Nav2 about='Token Holders' home='Event Owners' />
       <Routes>
         <Route path="/" element={<EventOwners />} />
         <Route path="/token-holders" element={<TokenHolders />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </>
