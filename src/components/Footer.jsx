@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ToggleContext } from "./ToggleContext";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   const { isToggled } = useContext(ToggleContext);
@@ -23,33 +21,28 @@ export default function Footer() {
       <div className="footer-socials">
         {/* <Link to='https://x.com/neliustoken' className="footer-items" style={!isToggled ? white : {}} target="_blank">X</Link> */}
         <Link
-          to="https://x.com/neliustoken"
+          to="https://www.tiktok.com/@neliusdao"
           target="_blank"
           rel="noopener noreferrer"
           className="footer-items"
         >
-          <FontAwesomeIcon
-            icon={faXTwitter}
-            size="lg"
-            color={!isToggled ? "white" : "black"}
-            className="social-icon"
-          />
+          TikTok
         </Link>
         <Link
-          to="https://www.linkedin.com/company/nelius/"
+          to="https://www.youtube.com/@neliusdao"
           className="footer-items"
           style={!isToggled ? white : {}}
           target="_blank"
         >
-          LinkedIn
+          YouTube
         </Link>
         <Link
-          to="https://github.com/Timi-G/Nelius"
+          to="https://www.facebook.com/neliusDAO"
           className="footer-items"
           style={!isToggled ? white : {}}
           target="_blank"
         >
-          GitHub
+          Facebook
         </Link>
       </div>
       <div className="terms">
