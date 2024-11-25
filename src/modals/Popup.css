@@ -29,6 +29,8 @@
     }
 }
 
+/* LOGIN */
+
 .circleBackground {
     position: absolute;
     top: 50%;
@@ -59,13 +61,13 @@
     font-size: small;
 }
 
-.passError.green {
+/* .passError.green {
     color: green;
 }
 
 .passError.red {
     color: red;
-}
+} */
 
 
 .p {
@@ -158,8 +160,6 @@
         font-weight: 500;
     }
 }
-
-/* LOGIN */
 
 .login {
     padding: 0px 100px;
