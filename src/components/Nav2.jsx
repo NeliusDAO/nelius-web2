@@ -1,19 +1,16 @@
 import React, { useContext, useState } from 'react';
 import { ToggleContext } from './ToggleContext';
-// import Logo from '../assets/img/logo/logo_nelius.png';
 import Logo from '../assets/img/logo/nelius_logo_nav.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTelegram, faInstagram, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-export default function Nav2(props) {
+export default function Nav2({ about, home }) {
     const { isToggled, setIsToggled } = useContext(ToggleContext);
-    // const [activeButton, setActiveButton] = useState(props.home);
     const [isOpen, setIsOpen] = useState(false);
 
-    // const handleClick = (event) => {
-    //     setActiveButton(event.target.textContent);
-    // };
+    const location = useLocation();
+    const currentPath = location.pathname
 
     const toggleHamburger = () => {
         setIsOpen(!isOpen);
@@ -25,13 +22,19 @@ export default function Nav2(props) {
         background: 'linear-gradient(180deg, rgb(233, 241, 243), rgb(233, 241, 243), rgb(233, 241, 243), rgb(94, 110, 234))',
     };
 
-    // const inactiveStyles = {
-    //     color: 'black'
-    // }
+    const stylesActive = {
+        borderRadius: '20px',
+        border: 'none',
+        background: 'linear-gradient(180deg, rgb(233, 241, 243), rgb(233, 241, 243), rgb(94, 110, 234))',
+        color: 'black',
+    };
 
-    // const inactiveStyles1 = {
-    //     color: 'white'
-    // }
+    const stylesInactive = (isToggled) => ({
+        borderRadius: '20px',
+        border: 'none',
+        background: 'transparent',
+        color: isToggled ? 'black' : 'white',
+    });
 
     const styles1 = {
         borderRadius: '20px',
@@ -41,7 +44,6 @@ export default function Nav2(props) {
     }
 
     const colorSwitch = {
-        // backgroundColor: 'rgb(19, 55, 128)',
         backgroundColor: 'black',
         color: 'white',
     };
@@ -52,55 +54,38 @@ export default function Nav2(props) {
             </div>
             <div className={`nav-list ${isOpen ? 'open' : ''}`}>
                 <ul className="lists">
-                    <li className="list-items" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
-                        <button
-                            className="buttons"
-                            style={isToggled ? styles : styles1}
-                        >
-                            {props.about}
-                        </button>
-                        {/* <button
-                            className="buttons"
-                            style={
-                                !isToggled
-                                    ? activeButton === props.home
-                                        ? styles1
-                                        : inactiveStyles1
-                                    : activeButton === props.home
-                                        ? styles
-                                        : inactiveStyles
-                            }
-                            onClick={handleClick}
-                        >
-                            {props.home}
-                        </button> */}
-
-                    </li>
-                    {/* <li className="list-items" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
-                        <button
-                            className="buttons"
-                            style={
-                                !isToggled
-                                    ? activeButton === props.about
-                                        ? styles1
-                                        : inactiveStyles1
-                                    : activeButton === props.about
-                                        ? styles
-                                        : inactiveStyles
-                            }
-                            onClick={handleClick}
-                        >
-                            {props.about}
-                        </button>
-                    </li> */}
-                    <li className="toggle-list" style={{backgroundColor : isToggled ? 'white' : 'black'}}>
+                    <Link to="/">
+                        <li className="list-items" style={{ backgroundColor: isToggled ? 'white' : 'black' }}>
+                            <button
+                                className="buttons"
+                                style={
+                                    currentPath === '/'
+                                        ? stylesActive
+                                        : stylesInactive(isToggled)
+                                }
+                            >
+                                {home}
+                            </button>
+                        </li>
+                    </Link>
+                    <Link to="token-holders">
+                        <li className="list-items" style={{ backgroundColor: isToggled ? 'white' : 'black' }}>
+                            <button
+                                className="buttons"
+                                style={
+                                    currentPath === '/token-holders'
+                                        ? stylesActive
+                                        : stylesInactive(isToggled)
+                                }
+                            >
+                                {about}
+                            </button>
+                        </li>
+                    </Link>
+                    <li className="toggle-list" style={{ backgroundColor: isToggled ? 'white' : 'black' }}>
                         <ToggleSwitch setIsToggled={setIsToggled} />
                     </li>
-                    <li>
-                        <Link to="/signup">Sign Up</Link>
-                    </li>
                 </ul>
-
             </div>
             <div className="nav-socials">
                 <ul className="social-items">
@@ -160,16 +145,21 @@ export default function Nav2(props) {
                             />
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/signup">
+                            <button className='sign-btn' style={!isToggled ? styles1 : styles}>Sign Up</button>
+                        </Link>
+                    </li>
                 </ul>
             </div>
             <div
                 className={`hamburger ${isOpen ? 'open' : ''}`}
                 onClick={toggleHamburger}
             >
-                <div className="line" style={{backgroundColor : !isToggled ? 'white' : 'black'}}></div>
-                <div className="line" style={{backgroundColor : !isToggled ? 'white' : 'black'}}></div>
-                <div className="line" style={{backgroundColor : !isToggled ? 'white' : 'black'}}></div>
-                <div className="line" style={{backgroundColor : !isToggled ? 'white' : 'black'}}></div>
+                <div className="line" style={{ backgroundColor: !isToggled ? 'white' : 'black' }}></div>
+                <div className="line" style={{ backgroundColor: !isToggled ? 'white' : 'black' }}></div>
+                <div className="line" style={{ backgroundColor: !isToggled ? 'white' : 'black' }}></div>
+                <div className="line" style={{ backgroundColor: !isToggled ? 'white' : 'black' }}></div>
             </div>
         </nav>
     );

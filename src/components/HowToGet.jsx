@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { ToggleContext } from "./ToggleContext";
+import { Link } from "react-router-dom";
 
 
 export default function HowToGet() {
@@ -59,11 +60,18 @@ export default function HowToGet() {
                 {getting.map((texts, index) => {
                     return (
                         <div className="card">
-                            <div style={texts.dot}></div>
-                            <p key={index + 1} className="texts">{texts.words}</p>
+                            <div className="dot" style={texts.dot}></div>
+                            <div>
+                                <p key={index + 1} className="texts">{texts.words}</p>
+                            </div>
                         </div>
                     )
                 })}
+            </div>
+            <div className="acct">
+                <Link to="/signup">
+                    <button className='account-btn' style={!isToggled ? dark : {}}>Create Account</button>
+                </Link>
             </div>
         </div>
     )

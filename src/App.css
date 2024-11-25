@@ -20,6 +20,10 @@
   background: linear-gradient(-45deg, rgb(5, 20, 60), rgb(98, 146, 212), rgb(98, 146, 212), rgb(5, 20, 60));
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width : 700px) {
   .buttonComponent {
     width: 90px;
@@ -30,6 +34,17 @@
 
 /* NAV */
 
+.sign-btn {
+  padding: 4px;
+  font-size: 16px;
+  height: 40px;
+  width: 80px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, rgb(5, 20, 60), rgb(98, 146, 212), rgb(98, 146, 212), rgb(5, 20, 60));
+
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -37,6 +52,7 @@
 
 .social-items {
   display: flex;
+  align-items: center;
   gap: 20px;
   padding: 15px;
 }
@@ -956,13 +972,41 @@ footer {
 
 /* PAGE TWO */
 
+.getting {
+  padding: 0px 100px;
+  display: grid;
+  place-content: center;
+  height: 85vh;
+}
+
 .printFrame {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width : 700px) {
+  .printFrame {
+    display: block;
+    align-items: center;
+  }
+
+  .getting {
+    padding: 80px 100px 0px 100px;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  }
+
+  .dot {
+    display: none;
+  }
 }
 
 .printFrame .card {
   display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 /* SIGNUP */
@@ -975,6 +1019,36 @@ footer {
   height: 100vh;
   background-color: rgba(57, 92, 142, 0.7);
   z-index: 1;
+}
+
+
+.signUpTrigger {
+  text-align: center;
+  font-weight: 600;
+}
+
+.loginLink:any-link {
+  color: black;
+  text-decoration: underline;
+}
+
+.acct {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.account-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  font-size: 16px;
+  height: 40px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(-45deg, rgb(5, 20, 60), rgb(98, 146, 212), rgb(98, 146, 212), rgb(5, 20, 60));
 }
 
 /* Modal Content */
@@ -991,19 +1065,91 @@ footer {
 }
 
 .modal {
-  background-color: #3434bd;
-  display: inline-block;
+  background-color: #FFFFFF;
+  display: grid;
+  place-content: center;
+  width: 687px;
+  max-width: 640px;
+  height: fit-content;
+  top: 12px;
+  left: 13929px;
+  gap: 0px;
+  border-radius: 24px;
+  opacity: 0px;
+}
+
+.modalButton {
+  width: 180px;
+  height: 45px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(-45deg, rgb(5, 20, 60), rgb(98, 146, 212), rgb(98, 146, 212), rgb(5, 20, 60));
+}
+
+.alert {
+  display: flex;
+  justify-content: center;
+}
+
+.popupOne {
+  padding: 5%;
 }
 
 .keywords {
-  align-items: center;
-  justify-content: center;
+  background-color: #E1F7FF;
+  border-radius: 24px;
+}
+.keyword {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
 }
 
-.passError {
-  color: rgb(182, 40, 40);
-  text-transform: uppercase;
-  font-size: small;
+.copy {
+  padding: 0px 0px 20px 0px;
+}
+
+.extra {
+  width: 200px;
+}
+
+.score {
+  background-color: #fcfcfc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: fit-content;
+  padding: 10px;
+}
+
+.words {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialId {
+  display: flex;
+  background-color: #fcfcfc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 300px;
+  height: 30px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.inputPass {
+  display: flex;
+  background-color: #FCFCFC;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 280px;
+  height: 30px;
+  padding: 5px;
+  padding-left: 30px;
 }

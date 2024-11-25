@@ -22,9 +22,10 @@ export default function Footer() {
         {/* <Link to='https://x.com/neliustoken' className="footer-items" style={!isToggled ? white : {}} target="_blank">X</Link> */}
         <Link
           to="https://www.tiktok.com/@neliusdao"
+          className="footer-items"
+          style={!isToggled ? white : {}}
           target="_blank"
           rel="noopener noreferrer"
-          className="footer-items"
         >
           TikTok
         </Link>
