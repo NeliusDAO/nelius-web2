@@ -20,12 +20,12 @@ export default function HowToGet() {
         {
             words: "Original holders of Nelius nominates a group of events to be donated to.", dot: {
                 backgroundColor: "red",
-                boxShadow : "0 4px 8px rgba(231, 94, 94, 0.1)",
+                boxShadow: "0 4px 8px rgba(231, 94, 94, 0.1)",
                 width: "15px",
                 height: "15px",
                 borderRadius: "50%"
             },
-            num : One
+            num: One
         },
         {
             words: "Token holders decides which sets of events to donate to at a given time.", dot: {
@@ -34,7 +34,7 @@ export default function HowToGet() {
                 height: "15px",
                 borderRadius: "50%"
             },
-            num : Two
+            num: Two
         },
         {
             words: "For every transaction made with Nelius, 1/10th of the transferred token is staked for contribution.", dot: {
@@ -43,7 +43,7 @@ export default function HowToGet() {
                 height: "15px",
                 borderRadius: "50%"
             },
-            num : Three
+            num: Three
         },
         {
             words: "All staked tokens would be donated to the address of selected addresses.", dot: {
@@ -52,7 +52,7 @@ export default function HowToGet() {
                 height: "15px",
                 borderRadius: "50%"
             },
-            num : Four
+            num: Four
         },
         {
             words: "Token holders can still donate to events of their choosing at any time provided event addresses.", dot: {
@@ -61,7 +61,7 @@ export default function HowToGet() {
                 height: "15px",
                 borderRadius: "50%"
             },
-            num : Five
+            num: Five
         },
     ]
 
