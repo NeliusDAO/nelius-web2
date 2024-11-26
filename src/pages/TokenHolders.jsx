@@ -10,7 +10,7 @@ export default function TokenHolders() {
     }
 
     return (
-        <div className="getting" style={!isToggled ? dark : {}}>
+        <div className="getting" id="getting" style={!isToggled ? dark : {}}>
             <HowToGet />
         </div>
     )
