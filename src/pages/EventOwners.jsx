@@ -1,4 +1,4 @@
-import About from "../components/About";
+// import About from "../components/About";
 import Blueprint from "../components/Blueprint";
 import Faq from "../components/Faq";
 import Info from "../components/Info";

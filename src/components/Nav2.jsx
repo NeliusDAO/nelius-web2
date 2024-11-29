@@ -91,7 +91,7 @@ export default function Nav2({ about, home }) {
                 <ul className="social-items">
                     <li>
                         <Link
-                            to="https://t.me/+AYM-0yp8od4yMGI0"
+                            to="https://t.me/neliusdao"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -105,7 +105,7 @@ export default function Nav2({ about, home }) {
                     </li>
                     <li>
                         <Link
-                            to="https://instagram.com/nelius_token"
+                            to="https://www.instagram.com/neliusdao"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -119,7 +119,7 @@ export default function Nav2({ about, home }) {
                     </li>
                     <li>
                         <Link
-                            to="https://x.com/neliustoken"
+                            to="https://x.com/neliusDAO"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -133,7 +133,7 @@ export default function Nav2({ about, home }) {
                     </li>
                     <li>
                         <Link
-                            to="https://www.linkedin.com/company/nelius/"
+                            to="https://linkedin.com/company/nelius"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

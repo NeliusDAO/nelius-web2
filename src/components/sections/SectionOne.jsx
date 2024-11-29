@@ -1,4 +1,5 @@
-// import Button from "../../assets/Button";
+import { HashLink as Link } from "react-router-hash-link";
+import Button from "../../assets/Button";
 import { useContext } from "react";
 import { ToggleContext } from '../ToggleContext';
 // import CarouselPage from "../Carousel";
@@ -33,9 +34,9 @@ export default function SectionOne() {
                     <div className="sectionOneParagraph">
                         <p className="headParagraph">With Nelius, your events can get effective publicity and funding.</p>
                     </div>
-                    {/* <div className="sectionOneButton">
-                        <Button button='Get Started' />
-                    </div> */}
+                    <div className="sectionOneButton">
+                        <Link to="#subscribe" smooth><Button button='Get Started' /></Link>
+                    </div>
                 </div>
             </div>
             {/* <CarouselPage /> */}
