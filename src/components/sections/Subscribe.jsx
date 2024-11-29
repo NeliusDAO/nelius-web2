@@ -35,7 +35,7 @@ export default function Subscribe() {
         e.preventDefault();
     }
     return (
-        <div className="subscribe" style={!isToggled ? dark : {}}>
+        <div className="subscribe" id="subscribe" style={!isToggled ? dark : {}}>
             <p className="subscribeHead">
                 Ready To Get <span className="textOne">Funded</span>?
             </p>

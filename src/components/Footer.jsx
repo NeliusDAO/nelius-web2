@@ -19,7 +19,6 @@ export default function Footer() {
         <p>© 2023 Nelius. All rights reserved</p>
       </div>
       <div className="footer-socials">
-        {/* <Link to='https://x.com/neliustoken' className="footer-items" style={!isToggled ? white : {}} target="_blank">X</Link> */}
         <Link
           to="https://www.tiktok.com/@neliusdao"
           className="footer-items"
