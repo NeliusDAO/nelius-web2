@@ -9,7 +9,7 @@ export default function EventOwners() {
     return (
         <div>
             <SectionOne />
-            <About />
+            {/* <About /> */}
             <Blueprint />
             <Info />
             <Subscribe />

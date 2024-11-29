@@ -81,18 +81,18 @@ export default function Signup() {
                                     handleCopyClick(),
                                     handleEnablerButtonClick()
                                 )
-                            }} style={{ display: "flex", justifyContent: "center" }} className="copy">Copy to clipboard</h3>
+                            }} style={{ display: "flex", justifyContent: "center" }} className="copy">Click To Copy</h3>
                         </CopyToClipboard>
                     </div>
                     {alert && <div className="alert">Copied PassPhrase To Clipboard</div>}
                     <div className="modalButtons">
-                        <p>You would be unable to create password unless you copy passphrase</p>
+                        <p>You would be unable to Generate ID unless you copy passphrase</p>
                         <button onClick={() => {
                             return (
                                 setGenerateId(false),
                                 setCreatePassword(true)
                             )
-                        }} disabled={!isButtonEnabled} className="modalButton">Create Password</button>
+                        }} disabled={!isButtonEnabled} className="modalButton">Generate ID</button>
                     </div>
                 </div>
             </Popup>
@@ -140,7 +140,7 @@ export default function Signup() {
                             setGenerateKeyword(true),
                             setCreatePassword(false)
                         )
-                    }} disabled={isDisabled} className="modalButton">Generate Keyword</button>
+                    }} disabled={isDisabled} className="modalButton">Register</button>
                 </form>
             </Popup>
             <Popup trigger={generateKeyword}>

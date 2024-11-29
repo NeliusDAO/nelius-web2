@@ -148,6 +148,8 @@ nav {
 
 .social-icon {
   margin: 0 5px;
+  width: 30px;
+  height: 30px;
 }
 
 .hamburger {
@@ -432,9 +434,9 @@ input:checked+.slider:before {
 /* BLUEPRINT */
 
 @media screen and (max-width: 700px) {
-  .blueprintImage {
-    height: 60%;
-    width: 60%;
+  #blueprintImage {
+    height: 80%;
+    width: 80%;
   }
 
   .blueprintStage .stageCard {
@@ -464,15 +466,9 @@ input:checked+.slider:before {
 }
 
 @media screen and (min-width: 701px) and (max-width: 1160px) {
-  .blueprintImage {
-    height: 60%;
-    width: 60%;
-  }
-
-  .blueprintStage .stageCard {
-    display: grid;
-    align-items: center;
-    padding-left: 0;
+  #blueprintImage {
+    height: 80%;
+    width: 80%;
   }
 
   .blueprint .blueprintText {
@@ -495,6 +491,11 @@ input:checked+.slider:before {
   padding-left: 5%;
 }
 
+.blueprintImage {
+  width: 113px;
+  height: 276px;
+}
+
 .stageCard .cardText {
   z-index: 1;
   font-size: 28px;
@@ -504,9 +505,6 @@ input:checked+.slider:before {
   align-items: center;
 }
 
-/* .blueprint {
-  margin: 0 100px 0 100px;
-} */
 .blueprint {
   padding: 0 100px 0 100px;
 }
@@ -516,14 +514,6 @@ input:checked+.slider:before {
   font-weight: 500;
   margin: 0;
 }
-
-/* #blueprintStage {
-  align-items: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin: 0px 30px 20px 30px;
-} */
 
 #blueprintStage {
   align-items: center;
@@ -655,7 +645,7 @@ input:checked+.slider:before {
 
 .infoText {
   margin: 0px;
-  font-size: 50px;
+  font-size: 64px;
   font-weight: 500;
 }
 
@@ -671,6 +661,8 @@ input:checked+.slider:before {
 .subscribeText {
   font-size: 28px;
   font-weight: 500;
+  margin-top: 0;
+  padding-top: 32px;
 }
 
 .subscribe {
@@ -678,10 +670,11 @@ input:checked+.slider:before {
   align-items: center;
   text-align: center;
   margin: 0px;
+  padding-top: 50px;
 }
 
 .form {
-  margin-top: 100px;
+  margin-top: 32px;
 }
 
 .emailInput.dark-placeholder::placeholder {
@@ -701,13 +694,12 @@ input:checked+.slider:before {
     font-size: small;
     font-weight: 500;
     padding: 0px 30px;
-    /* color: linear-gradient(180deg, rgb(10, 30, 80), rgb(20, 10, 130), rgb(10, 30, 80)); */
   }
 
   .inputContainer .emailInput {
     font-size: 10px;
     width: 200px;
-    height: 30px;
+    height: 50px;
     padding-left: 15px;
   }
 
@@ -727,7 +719,7 @@ input:checked+.slider:before {
 
 .emailInput {
   width: 400px;
-  height: 45px;
+  height: 60px;
   margin-right: 10px;
   font-size: 20px;
   border: none;
@@ -741,8 +733,8 @@ input:checked+.slider:before {
 }
 
 .emailInput::placeholder {
-  color: #333333;
-  font-size: small;
+  color: #808080;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -767,7 +759,7 @@ input:checked+.slider:before {
   flex: 0.5;
   font-weight: 500;
   font-size: 64px;
-  margin: auto;
+  margin-left: 70px;
   /* background-color: aqua; */
 }
 
@@ -786,10 +778,10 @@ input:checked+.slider:before {
 .faq-item {
   margin: auto;
   border-radius: 12px;
-  width: 70%;
+  width: 90%;
   background-color: #fcfcfc;
   border-bottom: 1px solid #ccc;
-  padding: 10px 0;
+  padding: 25px 0;
 }
 
 .faq-item {
@@ -798,12 +790,13 @@ input:checked+.slider:before {
 
 .faq-question {
   cursor: pointer;
-  font-weight: bold;
 }
 
 .faq-icon,
 .question {
   margin-left: 25px;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .faq-answer {
@@ -844,14 +837,14 @@ input:checked+.slider:before {
     margin-left: 50px;
   }
 
-  .faq-question {
-    font-size: 6px;
+  .question {
+    font-size: 9px;
+    margin-left: 10px;
   }
 
   div .faq-item {
-    width: 90%;
+    width: 100%;
     display: block;
-    justify-content: center;
   }
 }
 
@@ -870,6 +863,8 @@ input:checked+.slider:before {
   .faq-icon,
   .question {
     margin-left: 40px;
+    font-weight: 500;
+    font-size: 16px;
   }
 
   .faq-head {
@@ -878,7 +873,6 @@ input:checked+.slider:before {
 
   div .faq-item {
     width: 90%;
-    /* padding: 10px 0; */
   }
 
   .faq-info .small-faq {
@@ -904,6 +898,7 @@ input:checked+.slider:before {
   .faq-icon,
   .question {
     margin-left: 45px;
+    font-weight: 500;
   }
 
   .faq-head {
@@ -1115,7 +1110,7 @@ footer {
 .acct {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .account-btn {

@@ -32,7 +32,7 @@ const Dropdown = () => {
         },
         {
             question: 'What benefits does Nelius offer to event owners?',
-            answer: 'Nelius supports event owners in raising funds for their events and incentivizes promotion of the events thereby providing better publicity.',
+            answer: 'Nelius supports event owners in raising funds for their events and Incentivize promotion of the events thereby providing better publicity.',
         },
     ];
 
