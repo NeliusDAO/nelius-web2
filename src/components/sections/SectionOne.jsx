@@ -27,7 +27,7 @@ export default function SectionOne() {
                 <div className="circleBackground"></div>
                 <div className="sectionOneFrame">
                     <div className="sectionOneHeadText">
-                        <p className="headText">Get <span style={!isToggled ? text : {}} className="textOne">Publicity</span>, Get <span className="textOne">Funded</span></p>
+                        <p className="headText">Get <span style={!isToggled ? text : {}} className="textOne">Funded</span>, Get <span className="textOne">Public</span></p>
                         <p className="headText">With Nelius</p>
                     </div>
                     <div className="sectionOneParagraph">

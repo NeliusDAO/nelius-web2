@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { ToggleContext } from './ToggleContext';
 import Logo from '../assets/img/logo/nelius_logo_nav.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTelegram, faInstagram, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Nav2({ about, home }) {
@@ -16,11 +16,11 @@ export default function Nav2({ about, home }) {
         setIsOpen(!isOpen);
     };
 
-    const styles = {
-        borderRadius: '20px',
-        border: 'none',
-        background: 'linear-gradient(180deg, rgb(233, 241, 243), rgb(233, 241, 243), rgb(233, 241, 243), rgb(94, 110, 234))',
-    };
+    // const styles = {
+    //     borderRadius: '20px',
+    //     border: 'none',
+    //     background: 'linear-gradient(180deg, rgb(233, 241, 243), rgb(233, 241, 243), rgb(233, 241, 243), rgb(94, 110, 234))',
+    // };
 
     const stylesActive = {
         borderRadius: '20px',
@@ -36,12 +36,12 @@ export default function Nav2({ about, home }) {
         color: isToggled ? 'black' : 'white',
     });
 
-    const styles1 = {
-        borderRadius: '20px',
-        border: 'none',
-        color: 'white',
-        background: 'linear-gradient(180deg, rgb(10, 30, 80), rgb(20, 10, 130), rgb(10, 30, 80))'
-    }
+    // const styles1 = {
+    //     borderRadius: '20px',
+    //     border: 'none',
+    //     color: 'white',
+    //     background: 'linear-gradient(180deg, rgb(10, 30, 80), rgb(20, 10, 130), rgb(10, 30, 80))'
+    // }
 
     const colorSwitch = {
         backgroundColor: 'black',
@@ -95,12 +95,12 @@ export default function Nav2({ about, home }) {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <FontAwesomeIcon
-                                icon={faTelegram}
-                                size="xx-lg"
-                                color={!isToggled ? 'white' : 'black'}
+                            <img
+                                src={isToggled ? "https://img.icons8.com/?size=100&id=TCnKnYZFoOzM&format=png&color=000000" : "https://img.icons8.com/?size=100&id=TCnKnYZFoOzM&format=png&color=FFFFFF"}
+                                alt="telegram"
                                 className="social-icon"
                             />
+
                         </Link>
                     </li>
                     <li>
@@ -145,11 +145,11 @@ export default function Nav2({ about, home }) {
                             />
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link to="/signup">
                             <button className='sign-btn' style={!isToggled ? styles1 : styles}>Sign Up</button>
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
             <div

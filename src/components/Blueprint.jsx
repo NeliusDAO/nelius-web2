@@ -34,11 +34,11 @@ export default function Blueprint() {
                 </div>
                 <div className="stageCard" style={{}}>
                     <p style={{}} className="cardText" id="cardText">{blueprints.one}</p>
-                    <img src={One} alt="One" width={100} height={200} className="blueprintImage" />
+                    <img src={One} alt="One" className="blueprintImage" id="blueprintImage" />
                 </div>
                 <div className="stageCard" style={{}}>
                     <p style={{}} className="cardText" id="cardText">{blueprints.two}</p>
-                    <img src={Two} alt="Two" width={100} height={200} className="blueprintImage" />
+                    <img src={Two} alt="Two" className="blueprintImage" id="blueprintImage" />
                 </div>
                 <div className="stageCards">
                     <p>{blueprints.zero[1]}</p>
@@ -48,11 +48,11 @@ export default function Blueprint() {
                 </div>
                 <div className="stageCard" style={{}}>
                     <p style={{}} className="cardText" id="cardText">{blueprints.three}</p>
-                    <img src={Three} alt="Three" width={100} height={200} className="blueprintImage" />
+                    <img src={Three} alt="Three" className="blueprintImage" id="blueprintImage" />
                 </div>
                 <div className="stageCard" style={{}}>
                     <p style={{}} className="cardText" id="cardText">{blueprints.four}</p>
-                    <img src={Four} alt="Four" width={100} height={200} className="blueprintImage" />
+                    <img src={Four} alt="Four" className="blueprintImage" id="blueprintImage" />
                 </div>
                 <div className="stageCards">
                     <p>{blueprints.zero[1]}</p>
@@ -62,7 +62,7 @@ export default function Blueprint() {
                 </div>
                 <div className="stageCard" style={{}}>
                     <p style={{}} className="cardText" id="cardText">{blueprints.five}</p>
-                    <img src={Five} alt="Five" width={100} height={200} className="blueprintImage" />
+                    <img src={Five} alt="Five" className="blueprintImage" id="blueprintImage"  />
                 </div>
             </div>
         </div>
