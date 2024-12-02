@@ -66,7 +66,7 @@ const LargeImages = () => {
 const styles = {
     imageGrid: {
         display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr", // Keep all images side by side
+        gridTemplateColumns: "1fr 2fr 1fr", // Keep all images side by side
         gap: "10px", // Adjust spacing between images
         marginTop: "30px",
     },
