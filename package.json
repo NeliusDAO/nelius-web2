@@ -1,5 +1,6 @@
 {
   "name": "nelius-app",
+  "homepage": "https://neliusdao.github.io/nelius-app"
   "version": "0.1.0",
   "private": true,
   "dependencies": {
