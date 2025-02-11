@@ -32,7 +32,7 @@ const Pages = () => {
     <>
       <Nav2 about='Token Holders' home='Event Owners' />
       <Routes>
-        <Route path="/" element={<EventOwners />} />
+        <Route path="/event-owners" element={<EventOwners />} />
         <Route path="/token-holders" element={<TokenHolders />} />
         <Route path="/login" element={<Login />} />
       </Routes>
